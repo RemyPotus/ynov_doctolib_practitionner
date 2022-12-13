@@ -1,0 +1,27 @@
+.bottom-navbar {
+    position: fixed;
+    bottom: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    background: #fff;
+    border-radius: 30px 30px 0px 0px;
+    padding: 10px 0px;
+    box-shadow: 0px 0px 30px 0px rgba(0,0,0,.05);
+}
+
+.navbarIcon {
+    width:50px;
+    height:50px;
+}
+
+.navbarItem {
+    flex: 1 auto;
+}
+
+.iconCentered {
+    display:block;
+    margin:auto;
+    width:max-content;
+}
