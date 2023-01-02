@@ -8,9 +8,9 @@ import { initializeApp } from "firebase/app";
 import { getAuth } from 'firebase/auth';
 import { getFirestore } from 'firebase/firestore';
 import Root from "./routes/root";
-import Authentication from './pages/authentication';
+import Authentication from './pages/Authentication';
 import ErrorPage from './pages/error-page';
-import MyAppointments from './pages/myAppointments';
+import MyAppointments from './pages/MyAppointments';
 import './index.css'
 
 const firebaseConfig = {
