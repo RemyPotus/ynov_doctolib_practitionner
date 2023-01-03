@@ -6,6 +6,19 @@ import { VitePWA } from 'vite-plugin-pwa'
 export default defineConfig({
   plugins: [
     react(),
-    VitePWA({ registerType: 'autoUpdate', workbox: { clientsClaim: true, skipWaiting: true }, devOptions: { enabled: true, }, includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'masked-icon.svg'], manifest: { name: 'Simon game', short_name: 'Simon', description: 'Like my app', theme_color: '#ffffff', icons: [ { src: 'android-chrome-192x192.png', sizes: '192x192', type: 'image/png' }, { src: 'android-chrome-512x512.png', sizes: '512x512', type: 'image/png' } ] } })
+    VitePWA(
+      { registerType: 'autoUpdate', 
+      workbox: { clientsClaim: true, skipWaiting: true }, 
+      devOptions: { enabled: true, }, 
+      includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'masked-icon.svg'], 
+      manifest: { name: 'Ynov doctolib practitionner', short_name: 'Practitionner', description: 'My app', theme_color: '#ffffff', 
+      icons: [ 
+        {
+           src: 'android-chrome-192x192.png', sizes: '192x192', type: 'image/png' 
+        }, {
+           src: 'android-chrome-512x512.png', sizes: '512x512', type: 'image/png' 
+        } ] }
+     }
+    )
   ],
 })
